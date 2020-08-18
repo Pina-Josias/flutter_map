@@ -74,7 +74,8 @@ enum AnchorAlign {
   center,
 }
 
-class Marker {
+final String title;
+  final String subtitle;
   final LatLng point;
   final WidgetBuilder builder;
   final double width;
@@ -82,6 +83,8 @@ class Marker {
   final Anchor anchor;
 
   Marker({
+    this.title = '',
+    this.subtitle = '',
     this.point,
     this.builder,
     this.width = 30.0,
